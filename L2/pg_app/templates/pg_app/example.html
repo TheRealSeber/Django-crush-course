@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block base %}
+
+<h1>Hello here!</h1>
+<a href="{% url 'pg_app:variables' %}">
+    CLICK ME TO GO TO VARIABLES PAGE
+</a>
+<img src="{% static 'pg_app/dices.png' %}" alt="image">
+
+{% endblock %}

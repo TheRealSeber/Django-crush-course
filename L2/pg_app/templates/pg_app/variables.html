@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>EXAMPLE VARIABLES PAGE WORKOUT!!!</h1>
+    <h2> Welcome
+    {% if user_logged_in %}
+        {{ first_name }} {{ last_name }}!
+    {% else %}
+        Guest
+    {% endif%}
+    </h2>    
+    <h2> {{ some_dict.inside_key }}</h2>
+    <ul>
+    {% for item in some_list%}
+        <li>{{forloop.counter}}. {{ item }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
